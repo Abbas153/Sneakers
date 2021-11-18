@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Sneakers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="images/favicon-32x32.png">
-  </head>
-  <body>
-    <div class="overlay">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Sneakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="main-images">
+      <img class="close" src="images/icon-close-white.svg">
+      <div class="carousel">
+        <div class="carousel-item carousel-item-visible hero-image">
+          <img src="images/image-product-1.jpg" />
+        </div>
+        <div class="carousel-item hero-image">
+          <img src="images/image-product-2.jpg" />
+        </div>
+        <div class="carousel-item hero-image">
+          <img src="images/image-product-3.jpg" />
+        </div>
+        <div class="carousel-item hero-image">
+          <img src="images/image-product-4.jpg" />
+        </div>
+        <div class="carousel-actions">
+          <img id="carousel-button-prev" src="images/icon-previous.svg">
+          <img id="carousel-button-next" src="images/icon-next.svg">
+        </div>
+      </div>
+      <div class="secondary-images">
+        <img src="images/image-product-1-thumbnail.jpg" class="carousel-border">
+        <img src="images/image-product-2-thumbnail.jpg">
+        <img src="images/image-product-3-thumbnail.jpg">
+        <img src="images/image-product-4-thumbnail.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <header>
+      <nav>
+        <button class="mobile-nav-menu">
+          <img src="images/icon-menu.svg">
+        </button>
+        <button class="mobile-nav-menu-close">
+          <img src="images/icon-close.svg">
+        </button>
+        <img src="images/logo.svg" alt="Sneakers" class="logo">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <img src="images/icon-cart-grey.svg" class="cart">
+        <!-- for storing cart items-->
+        <div class="cart-container">
+          <h3>Cart</h3>
+          <hr>
+          <div class="cart-items"></div>
+        </div>
+        <img src="images/image-avatar.png" class="avatar">
+      </div>
+    </header>
+    <hr>
+    <main>
       <div class="main-images">
-        <img class="close" src="images/icon-close-white.svg">
-        <div class="carousel">
-          <div class="carousel-item carousel-item-visible hero-image">
-              <img src="images/image-product-1.jpg" />
-          </div>
-          <div class="carousel-item hero-image">
-              <img src="images/image-product-2.jpg" />
-          </div>
-          <div class="carousel-item hero-image">
-              <img src="images/image-product-3.jpg" />
-          </div>
-          <div class="carousel-item hero-image">
-            <img src="images/image-product-4.jpg" />
-          </div>
-          <div class="carousel-actions">
-              <img id="carousel-button-prev" src="images/icon-previous.svg"> 
-              <img id="carousel-button-next" src="images/icon-next.svg"> 
-          </div>
+        <div class="hero-image">
+          <img src="images/image-product-1.jpg">
         </div>
         <div class="secondary-images">
-          <img src="images/image-product-1-thumbnail.jpg" class="carousel-border">
+          <img src="images/image-product-1-thumbnail.jpg" class="sub-images-border">
           <img src="images/image-product-2-thumbnail.jpg">
           <img src="images/image-product-3-thumbnail.jpg">
           <img src="images/image-product-4-thumbnail.jpg">
         </div>
       </div>
-    </div>
-    <div class="container">
-      <header>
-        <nav>
-          <button class="mobile-nav-menu">
-            <img src="images/icon-menu.svg">
-          </button>
-          <button class="mobile-nav-menu-close">
-            <img src="images/icon-close.svg">
-          </button>
-          <img src="images/logo.svg" alt="Sneakers" class="logo">
-          <ul>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="profile">
-          <img src="images/icon-cart-grey.svg" class="cart">
-          <!-- for storing cart items-->
-          <div class="cart-container">
-            <h3>Cart</h3>                     
-            <hr>
-            <div class="cart-items"></div>
-          </div>
-          <img src="images/image-avatar.png" class="avatar">
+      <div class="description">
+        <h3>Sneaker Company</h3>
+        <h1>Fall limited edition sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.</p>
+        <span class="new-price">$125.00</span>
+        <span class="discount">50% </span>
+        <div class="old-price">$250.00</div>
+        <div class="count">
+          <img class="remove" src="images/icon-minus.svg">
+          <span class="quantity">0</span>
+          <img class="add" src="images/icon-plus.svg">
         </div>
-      </header>
-      <hr>
-      <main>
-        <div class="main-images">
-          <div class="hero-image">
-            <img src="images/image-product-1.jpg">
-          </div>
-          <div class="secondary-images">
-            <img src="images/image-product-1-thumbnail.jpg" class="sub-images-border">
-            <img src="images/image-product-2-thumbnail.jpg">
-            <img src="images/image-product-3-thumbnail.jpg">
-            <img src="images/image-product-4-thumbnail.jpg">
-          </div>
-        </div>
-        <div class="description">
-          <h3>Sneaker Company</h3>
-          <h1>Fall limited edition sneakers</h1>
-          <p>These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they'll withstand everything
-            the weather can offer.</p>
-          <span class="new-price">$125.00</span>
-          <span class="discount">50% </span>
-          <div class="old-price">$250.00</div>
-          <div class="count">
-            <img class="remove" src="images/icon-minus.svg">
-            <span class="quantity">0</span>
-            <img class="add" src="images/icon-plus.svg">
-          </div>
-          <button class="add-to-cart">
-            <img src="images/icon-cart.svg">
-            Add to cart
-          </button>
-        </div>
-      </main>
-    </div>
-    <script src="script.js"></script>
-  </body>
+        <button class="add-to-cart">
+          <img src="images/icon-cart.svg">
+          Add to cart
+        </button>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
